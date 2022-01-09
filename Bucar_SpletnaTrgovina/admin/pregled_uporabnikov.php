@@ -29,8 +29,7 @@ if (isset($_COOKIE['prijava-admin'])) {
 include './glava_admin.php';
 
 
-
-// preverba, katerizdelek moramo preveriti
+// preverba, kater izdelek moramo preveriti
 $uporabnisko_ime = $_GET['uporabnisko_ime'];
 
 $dbhost = 'localhost';
