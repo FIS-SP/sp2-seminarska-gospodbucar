@@ -1,0 +1,23 @@
+
+
+/* noga */
+.footer{
+    
+    background-image: linear-gradient(to left, rgb(150, 137, 137), grey, white);
+    margin-bottom: 0;
+    padding-top: 100px;
+    display: inline-block;
+    width: 100%;
+
+
+ 
+
+}
+.footer p{
+    
+    color: #000000;
+    text-align: center;
+    font-family: Arial;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
