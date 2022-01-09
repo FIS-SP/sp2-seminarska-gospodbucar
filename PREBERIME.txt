@@ -2,6 +2,8 @@ JANEZ BUČAR, 35160122 - SPLETNA TRGOVINA ZA NAKUP SREBRNIKOV
 
 Spletna stran omogoča naročilo samo ob registraciji.
 
+Podatkovno bazo je potrebo preimenovati v spletna_trgovina_bucar in jo importat v php my admin
+
 registracija omogoča izbiro ali se registrirate kot ADMIN ali UPORABNIK
 
 narejena sta 2 testna računa :
