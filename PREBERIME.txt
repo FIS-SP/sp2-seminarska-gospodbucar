@@ -3,7 +3,7 @@ JANEZ BUČAR, 35160122 - SPLETNA TRGOVINA ZA NAKUP SREBRNIKOV
 Podatkovno bazo je potrebo preimenovati v spletna_trgovina_bucar in jo importat v php my admin
 
 PROSIM ČE MAPO Bucar_spletnatrgovina kopirate v htdocs in 
-ne mapo sp2-seminarska-gospodbucar-main
+ne mapo sp2-seminarska-gospodbucar-main potem ko si prenesete iz githuba.
 
 
 LINK DO LOCALHOSTA PO IMPORTU IZ GITHUBA V HTDOCS ----
