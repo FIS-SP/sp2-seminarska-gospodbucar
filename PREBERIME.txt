@@ -4,6 +4,12 @@ Spletna stran omogoča naročilo samo ob registraciji.
 
 Podatkovno bazo je potrebo preimenovati v spletna_trgovina_bucar in jo importat v php my admin
 
+LINK DO LOCALHOSTA PO IMPORTU IZ GITHUBA V HTDOCS ----
+http://localhost/sp2-seminarska-gospodbucar-main/Bucar_SpletnaTrgovina/domov.php
+
+
+
+
 registracija omogoča izbiro ali se registrirate kot ADMIN ali UPORABNIK
 
 narejena sta 2 testna računa :
