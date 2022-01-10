@@ -1,0 +1,438 @@
+p {
+    font-family: Arial black;
+    font-size: 14;
+    color: #6d5f5e;
+}
+a:hover, a:visited, a:link, a:active
+{
+    color: #6d5f5eb9;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: Arial ;
+    font-weight: none;
+    font-size: 20;
+    letter-spacing: 1px;
+    color: #473431;
+}
+
+h2 {
+    font-family: Arial ;
+    font-weight: none;
+    font-size: 18;
+    letter-spacing: 1px;
+    color: #46403f;
+}
+
+h3 {
+    font-family: Arial ;
+    font-size: 14;
+    font-weight: bolder;
+    font-weight: none;
+    letter-spacing: 1px;
+    color: #554e4d;
+}
+
+h4 {
+    font-family: Arial ;
+    font-weight: none;
+    font-size: 13;
+    letter-spacing: 3px;
+    color: #46403f;
+}
+
+h6 {
+    font-family: Arial ;
+    font-weight: none;
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: #46403f;
+}
+
+select{
+
+    margin-right: 0%;
+    float: right;
+    width:500px;
+}
+
+
+.prijava-form {
+   
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 2rem auto;
+}
+
+.prijava-form form{
+    text-align: center;
+}
+
+.prijava-form h1{
+    text-align: center;
+}
+
+.prijava-form p{
+    margin:0;
+}
+
+input {
+    font-family: Arial black;
+    text-align: left;
+    width: 500px;}
+
+input[type=text], select {
+ 
+    margin-left: auto;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: left;
+  }
+
+  input[type=number], select {
+ 
+    margin-left: auto;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: left;
+    width: 500px;
+  }
+
+
+
+  input[type=checkbox], select {
+    font-family: arial; 
+    padding-left: 5px;
+    float: right;
+    text-align: right;
+    margin-right: 0;
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    
+    
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
+  }
+
+  input[type=submit] {
+    width: fit-content;
+    height: fit-content;
+    background-color: #0a050586;
+    color: white;
+    padding: 14px 20px;
+    margin: 2em 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #887877;
+  }
+
+::placeholder {
+    color:#b3b3b3
+  }
+
+  .home-main {
+      width:80%;
+      margin:0 auto;
+  }
+
+  .home-main-iskanje{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 10%;
+      
+  }
+
+  .home-main-iskanje-item1{
+      text-align: center;
+      width:fit-content;
+      margin:0;
+      padding:0;
+  }
+  .home-main-iskanje-gumb{
+    text-align: center;
+    margin-right: 0;
+    width:10%;
+    padding:0;
+    float: right;
+    display: flex;
+    padding-left: 5px;
+
+}
+
+.home-main-page{
+    display:flex;
+    margin:1rem 0;
+}
+
+.home-main-page-filtri{
+    width:15%;
+    border-left: 2px solid #efefef;
+    padding:0 1.5rem;
+    background-color: aqua;
+}
+
+.home-main-page-filtri p{
+    border-left: 2px solid #dadada;
+    padding: 0 1rem;
+    
+}
+
+.inputCheck{
+    
+    display:flex;
+    align-items: center;
+    text-align: left;
+    position: relative;
+
+    
+
+}
+
+.inputCheck p{
+    
+    width:fit-content;
+    font-size: 12px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+.inputCheck input[type=checkbox]{
+    width: 10%;
+    
+}
+
+
+
+
+
+
+.home-main-page-izdelki{
+    margin-left: 2rem;
+    width:80%;
+    text-align: center;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.home-main-page-izdelki-posamezni{
+    
+    border-left:1px solid #efefef;
+    border-right:1px solid #efefef;
+    border-bottom:1px solid #efefef;
+    width: 33%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+    
+}
+
+.home-main-page-izdelki-posamezni:hover{
+
+background-color: #efefef;
+
+}
+
+.home-main-page-izdelki-posamezni img{
+    
+    margin-top: 2rem;
+    
+}
+
+.home-main-page-izdelki-posamezni h3{
+    width:200px;
+    border-left: 2px solid #2d2faa;
+    text-align: center;
+    padding: 0;
+    font-size: 18;
+    
+}
+
+/* FORMS */
+
+
+
+
+.registracija {
+
+    margin-left: 0;
+    float: left;
+    display: block;
+    border : 1px;
+}
+.prijava-submit input[type=submit]{
+    margin:0rem 1rem;
+}
+
+
+.register-column{
+    display:table;
+    height: fit-content;
+    width: 80%;
+}
+
+.register-column-vmesni{
+    margin-top: 1%;
+    margin-left: 0;
+    text-align: left;
+
+}
+.register-column-vmesni p{
+
+font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/* izdelek*/
+
+.izdelek{
+   
+    display:flex;
+    justify-content: center;
+    width:80%;
+    margin:2rem auto;
+    align-items: center;
+    
+}
+.izdelek-slika{
+    
+    text-align: center;
+    margin:2rem 0;
+    width:60%;
+    height: 100%;
+}
+.izdelek-podatki{
+    border-left: 2px solid #2d2faa;
+    padding-left: 2rem;
+    width:40%;
+}
+
+.izdelek-podatki select{
+    width: 20%;
+}
+
+.kontakt{
+    
+    margin:0 auto;
+    text-align: center;
+    border-bottom: 1px solid #efefef;
+    width:80%;
+}
+
+.kontakt p{
+    border-left:2px solid #000000;  
+    width:350px;
+    text-align: center;
+    margin: 1rem auto;
+    padding:0;
+}
+
+
+
+
+/* naročila  */
+
+.narocila_container{
+    width:80%;
+    display: flex;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+th {
+    padding-left: 20px;
+
+
+}
+.tabela{
+    margin-top: 3%;
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tabela-narocil{
+    margin-left: 0;
+    text-align: center;
+}
+
+.tabela-narocil th{
+
+    padding: 0rem 2.5rem;
+    font-family: arial black;
+    font-size: 18;
+    color: #000000;
+    border-bottom: 1px solid #949090;
+}
+
+
+
+.tabela-narocil td, tr{
+    padding: 1rem 2.5rem;
+    font-family: arial black;
+    font-size: 14;
+    color: #000000;
+    border-bottom: 1px solid #949090;
+}
+
+.tabela-link a{
+color: #000000;
+}
+
+.tabela-link-brez a{
+    color: #000000;
+    }
+    
+
+.tabela-link a:hover{
+    font-size: 15;
+    }
+
+.tabela-link-brez a:hover{
+    color: #000000;
+    }
+
+.tabela-narocil tr:hover {
+    background-color: #c0b7b7;
+}
+
+.uporabnik-podatki{
+    border-left: 2px solid #2d2faa;
+    padding-left: 2rem;
+    margin:2rem auto;
+}
+
+.uporabnik{
+   
+    display:flex;
+    justify-content: center;
+    width:80%;
+    margin:2rem auto;
+    align-items: center;
+    
+}

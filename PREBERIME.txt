@@ -1,0 +1,33 @@
+JANEZ BUČAR, 35160122 - SPLETNA TRGOVINA ZA NAKUP SREBRNIKOV
+
+Podatkovno bazo je potrebo preimenovati v spletna_trgovina_bucar in jo importat v php my admin
+
+PROSIM ČE MAPO Bucar_spletnatrgovina kopirate v htdocs in 
+ne mapo sp2-seminarska-gospodbucar-main potem ko si prenesete iz githuba.
+
+
+LINK DO LOCALHOSTA PO IMPORTU IZ GITHUBA V HTDOCS ----
+http://localhost/Bucar_SpletnaTrgovina/domov.php
+
+-------------------------------------------------------------------
+Spletna stran omogoča naročilo samo ob registraciji.
+
+registracija omogoča izbiro ali se registrirate kot ADMIN ali UPORABNIK
+
+narejena sta 2 testna računa :
+
+
+Uporabniško ime : admin    |   geslo: admin
+
+Uporabniško ime : user	   |   geslo: user
+
+
+
+Uporabnik lahko z klikom na artikel naroči želeno količino srebrnikov
+in ima pregled nad svojimi naročili.
+
+
+
+Admin lahko dodaja, posodablja in izbriše artikle(preko id). Admin ima 
+vpogled v vsa naročila in v oddelku naročila lahko z klikom na uporabnika vidi
+njegove podatke vse razen gesla. Vidi lahko tudi artikel z klikom nanj

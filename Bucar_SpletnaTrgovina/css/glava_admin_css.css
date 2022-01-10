@@ -1,0 +1,92 @@
+p {
+    font-family: Arial black;
+    font-size: 14;
+    color: #000000;
+}
+
+.h1 {
+
+    font-family: fantasy;
+
+}
+a:hover, a:visited, a:link, a:active
+{
+    color: #000000b9;
+    text-decoration: none;
+}
+
+
+.admin_glava {
+    width: 95%;
+    height: fit-content;
+    align-items: center;
+    display:flex;
+    justify-content: center;
+    margin:0em auto;
+    vertical-align: middle;
+    background-image: linear-gradient(to right, rgba(209, 41, 41, 0.479), rgb(214, 200, 200));
+
+}
+
+.nav-item {
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    align-items: center;
+    margin: 2rem 0;
+
+    
+}
+
+.nav-item p{
+    width: 100%;
+    border-left: 1px groove #000000;
+    text-align: center;
+    font-family: Arial black;
+    font-size: 13;
+    text-shadow: #000000;
+    color: black;
+    
+}
+
+.nav-item img:hover{
+    width: 113px;
+    height: 113px;
+}
+
+.nav-item p:hover{
+   
+    font-size: 14;
+    color:rgb(229, 236, 236)
+}
+
+.odjava {
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:20%;
+    align-items: center;
+    margin: 1rem 0;
+    color: black;
+    margin-top: 6px;
+
+}
+
+.odjava p:hover{
+   
+    font-size: 15;
+}
+
+
+.odjava p{
+    width: 100%;
+    border-left: 1.5px solid #ff2200;;
+    text-align: center;
+    font-family: Arial black;
+    font-size: 14;
+    letter-spacing: 1pt;
+    
+}
