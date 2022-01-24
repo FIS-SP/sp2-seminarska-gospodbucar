@@ -31,3 +31,10 @@ in ima pregled nad svojimi naročili.
 Admin lahko dodaja, posodablja in izbriše artikle(preko id). Admin ima 
 vpogled v vsa naročila in v oddelku naročila lahko z klikom na uporabnika vidi
 njegove podatke vse razen gesla. Vidi lahko tudi artikel z klikom nanj
+
+-------------------------------------------------------------------------------
+
+OPEN API DOKUMENTACIJA POSTMAN_API.JSON
+
+Ko importate v POSTMAN:
+Najprej zaženite PRIJAVA ADMIN IN PRIJAVA USER, da se shranijo piškotki in UPORABITE POSTMAN DESKOP AGENT.
