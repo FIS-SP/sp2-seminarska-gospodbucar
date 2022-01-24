@@ -1,0 +1,817 @@
+{
+	"info": {
+		"_postman_id": "7a41f305-cdcc-48dd-9b8d-31cfadd2f86b",
+		"name": "Spletna_TRG",
+		"description": "Spletna trgovina, registracija kot admin ali user. Admin lahko dodaja, posodablja, briše izdelke. Ima pregled nad uporabniki in izdelki. Uporabnik lahko naroči izdelke, pri čemer mora biti prijavljen in registriran.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ADMIN",
+			"item": [
+				{
+					"name": "Pregled Uporabnikov",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/bucar_spletnatrgovina/admin/pregled_uporabnikov.php?uporabnisko_ime=user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"bucar_spletnatrgovina",
+								"admin",
+								"pregled_uporabnikov.php"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "uporabnisko_ime",
+									"value": "user"
+								}
+							]
+						},
+						"description": "Pregled uporabnikov oz. prikaz vseh podatkov o uporabniku razen gesla"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE artikel",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "23",
+									"type": "text"
+								},
+								{
+									"key": "submit",
+									"value": "odstrani",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/bucar_spletnatrgovina/admin/odstrani_artikel_admin.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"bucar_spletnatrgovina",
+								"admin",
+								"odstrani_artikel_admin.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DODAJ artikel",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "naziv",
+									"value": "test_naziv",
+									"type": "text"
+								},
+								{
+									"key": "vrsta",
+									"value": "1Oz",
+									"type": "text"
+								},
+								{
+									"key": "proizvajalec",
+									"value": "test_proizvajalec",
+									"type": "text"
+								},
+								{
+									"key": "slika",
+									"value": "test_slika",
+									"type": "text"
+								},
+								{
+									"key": "opis",
+									"value": "999/1000Ag",
+									"type": "text"
+								},
+								{
+									"key": "cena",
+									"value": "20",
+									"type": "text"
+								},
+								{
+									"key": "submit",
+									"value": "Dodaj!",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/bucar_spletnatrgovina/admin/dodaj_Artikel_admin.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"bucar_spletnatrgovina",
+								"admin",
+								"dodaj_Artikel_admin.php"
+							]
+						},
+						"description": "Dodaj artikel. OB pravilni izvedbi vas preusmeri v Domačo stran -admin"
+					},
+					"response": []
+				},
+				{
+					"name": "POSODOBI artikel",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "naziv",
+									"value": "test2",
+									"type": "text"
+								},
+								{
+									"key": "vrsta",
+									"value": "2Oz",
+									"type": "text"
+								},
+								{
+									"key": "proizvajalec",
+									"value": "test2",
+									"type": "text"
+								},
+								{
+									"key": "slika",
+									"value": "slika_test",
+									"type": "text"
+								},
+								{
+									"key": "opis",
+									"value": "998/1000Ag",
+									"type": "text"
+								},
+								{
+									"key": "cena",
+									"value": "30",
+									"type": "text"
+								},
+								{
+									"key": "id",
+									"value": "25",
+									"type": "text"
+								},
+								{
+									"key": "submit",
+									"value": "Posodobi!",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/bucar_spletnatrgovina/admin/update_artikel_admin.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"bucar_spletnatrgovina",
+								"admin",
+								"update_artikel_admin.php"
+							]
+						},
+						"description": "Posodobitev artikla, OB pravilni izvedbi vas preusmeri v Domačo stran - Admin"
+					},
+					"response": []
+				},
+				{
+					"name": "GET artikel",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/bucar_spletnatrgovina/admin/izdelek_admin.php?artikel=Panda",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"bucar_spletnatrgovina",
+								"admin",
+								"izdelek_admin.php"
+							],
+							"query": [
+								{
+									"key": "artikel",
+									"value": "Panda"
+								}
+							]
+						},
+						"description": "GET artikel. Prikaže določen artikel"
+					},
+					"response": []
+				},
+				{
+					"name": "GET naročila",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"description": "Prikaz vseh naročil"
+					},
+					"response": []
+				}
+			],
+			"description": "pred testiranjem drugih komponent **NAJPREJ TESTIRAJTE POSEBEJ PRIJAVA ADMIN IN PRIJAVA USER**, DA SE SHANIJO PIŠKOTKI.\n\nPotrebno je uporabiti POSTMAN DESKOP AGENT",
+			"auth": {
+				"type": "basic",
+				"basic": [
+					{
+						"key": "password",
+						"value": "admin",
+						"type": "string"
+					},
+					{
+						"key": "username",
+						"value": "admin",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "USER",
+			"item": [
+				{
+					"name": "GET artikel",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/bucar_spletnatrgovina/artikel.php?naziv=panda",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"bucar_spletnatrgovina",
+								"artikel.php"
+							],
+							"query": [
+								{
+									"key": "naziv",
+									"value": "panda"
+								}
+							]
+						},
+						"description": "Pregled nad artiklom -USER"
+					},
+					"response": []
+				},
+				{
+					"name": "NAROCI artikel",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "kolicina",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "naroci",
+									"value": "Naroči",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/bucar_spletnatrgovina/artikel.php?naziv=panda",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"bucar_spletnatrgovina",
+								"artikel.php"
+							],
+							"query": [
+								{
+									"key": "naziv",
+									"value": "panda"
+								}
+							]
+						},
+						"description": "Naročilo artikla do 10 KOLIČINE"
+					},
+					"response": []
+				},
+				{
+					"name": "GET naročila",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"description": "Prikaz naročil opravljenih na tem računu"
+					},
+					"response": []
+				}
+			],
+			"description": "Pred preizkusom drugih komponent SE PRIJAVITE, DA SE SHRANIJO PIŠKOTKI\n\nOmogoča pregled artikla ter naročilo nartikla do 10 količine",
+			"auth": {
+				"type": "basic",
+				"basic": [
+					{
+						"key": "password",
+						"value": "user",
+						"type": "string"
+					},
+					{
+						"key": "username",
+						"value": "user",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Registracija",
+			"item": [
+				{
+					"name": "Registracija_Admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "uporabnisko_ime",
+									"value": "test_admin",
+									"type": "text"
+								},
+								{
+									"key": "ime_priimek",
+									"value": "test_admin",
+									"type": "text"
+								},
+								{
+									"key": "naslov",
+									"value": "test_admin",
+									"type": "text"
+								},
+								{
+									"key": "posta",
+									"value": "test_admin",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "test_admin",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "test_admin",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "admin",
+									"type": "text"
+								},
+								{
+									"key": "submit",
+									"value": "Registriraj se!",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/bucar_spletnatrgovina/registracija.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"bucar_spletnatrgovina",
+								"registracija.php"
+							]
+						},
+						"description": "registracija kot admin"
+					},
+					"response": []
+				},
+				{
+					"name": "Registracija_Uporabnik",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "uporabnisko_ime",
+									"value": "test_user",
+									"type": "text"
+								},
+								{
+									"key": "ime_priimek",
+									"value": "test_user",
+									"type": "text"
+								},
+								{
+									"key": "naslov",
+									"value": "test_user",
+									"type": "text"
+								},
+								{
+									"key": "posta",
+									"value": "test_user",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "test_user",
+									"type": "text"
+								},
+								{
+									"key": "geslo",
+									"value": "test_user",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "uporabnik",
+									"type": "text"
+								},
+								{
+									"key": "submit",
+									"value": "Registriraj se!",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/bucar_spletnatrgovina/registracija.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"bucar_spletnatrgovina",
+								"registracija.php"
+							]
+						},
+						"description": "registracija kot user"
+					},
+					"response": []
+				}
+			],
+			"description": "REGISTRACIJA - ADMIN ALI USER\n\nOB pravilni registraciji vas preusmeri v prijavno stran. OB napaki je USERNAME že zaseden",
+			"auth": {
+				"type": "noauth"
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Filtri",
+			"item": [
+				{
+					"name": "Filter proizvajalec",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "proizvajalec[]",
+									"value": "Armenian mint",
+									"type": "text"
+								},
+								{
+									"key": "filtri",
+									"value": "Filtriraj",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/bucar_spletnatrgovina/prijavljen/domov_prijavljen.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"bucar_spletnatrgovina",
+								"prijavljen",
+								"domov_prijavljen.php"
+							]
+						},
+						"description": "Prikaz artiklov filtriranih glede na proizvajalca, vrsto ali razporejeno ASC po ceni"
+					},
+					"response": []
+				},
+				{
+					"name": "Filter vrsta",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "vrsta[]",
+									"value": "4OZ",
+									"type": "text"
+								},
+								{
+									"key": "filtri",
+									"value": "Filtriraj",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/bucar_spletnatrgovina/prijavljen/domov_prijavljen.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"bucar_spletnatrgovina",
+								"prijavljen",
+								"domov_prijavljen.php"
+							]
+						},
+						"description": "Filtriranje glede na vrsto"
+					},
+					"response": []
+				},
+				{
+					"name": "Filter Razvrsti ASC",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "cena",
+									"value": "Najnizja",
+									"type": "text"
+								},
+								{
+									"key": "filtri",
+									"value": "Filtriraj",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/bucar_spletnatrgovina/prijavljen/domov_prijavljen.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"bucar_spletnatrgovina",
+								"prijavljen",
+								"domov_prijavljen.php"
+							]
+						},
+						"description": "frazpored artiklov po ceni od najnižje ASC"
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "basic",
+				"basic": [
+					{
+						"key": "password",
+						"value": "user",
+						"type": "string"
+					},
+					{
+						"key": "username",
+						"value": "user",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "PRIJAVA-USER-ADMIN",
+			"item": [
+				{
+					"name": "Prijava User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "uporabnisko_ime",
+									"value": "user",
+									"type": "text"
+								},
+								{
+									"key": "geslo",
+									"value": "user",
+									"type": "text"
+								},
+								{
+									"key": "submit",
+									"value": "prijava",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/bucar_spletnatrgovina/prijava.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"bucar_spletnatrgovina",
+								"prijava.php"
+							]
+						},
+						"description": "Prijava v USER stran, da se shranijo piškotki"
+					},
+					"response": []
+				},
+				{
+					"name": "Prijava Admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "uporabnisko_ime",
+									"value": "admin",
+									"type": "text"
+								},
+								{
+									"key": "geslo",
+									"value": "admin",
+									"type": "text"
+								},
+								{
+									"key": "submit",
+									"value": "prijava",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/bucar_spletnatrgovina/prijava.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"bucar_spletnatrgovina",
+								"prijava.php"
+							]
+						},
+						"description": "PRIJAVA v admin control panel. Potrebno se je prijaviti preden testiramo druge komponente, da se shranijo piškotki.\n\nOmogoča DODAJANJE, ODSTRANJEVANJE, POSODOBITEV artiklov\n\nOmogoča pregled nad določenim uporabnikom ali artiklom"
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"pm.globals.set(\"URL\", \"http://localhost/bucar_spletnatrgovina\");"
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost/bucar_spletnatrgovina",
+			"type": "string"
+		}
+	]
+}
